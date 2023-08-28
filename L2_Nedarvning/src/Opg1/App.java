@@ -23,18 +23,25 @@ public class App {
         liste.add(v2);
         liste.add(s1);
 
+        System.out.println(samletLoen(liste));
+
+    }
+
+    public static int samletloenUge(Mekaniker mekaniker){
+        return mekaniker.beregnLoen()*4;
+    }
+
+    public static double samletLoen(ArrayList<Mekaniker> liste){
         int samletloenAlle = 0;
 
         for (int i = 0;i<liste.size();i++){
 
-            samletloenAlle =+ samletloen(liste.get(i));
+            samletloenAlle =+ samletloenUge(liste.get(i));
+
+            if(liste.get(i) instanceof Synsmand){
+                System.out.println("Synsmand");
+            }
         }
-
-        System.out.println(samletloenAlle);
-
-    }
-
-    public static int samletloen(Mekaniker mekaniker){
-        return mekaniker.beregnLoen()*4;
-    }
+        return samletloenAlle;
+    };
 }
