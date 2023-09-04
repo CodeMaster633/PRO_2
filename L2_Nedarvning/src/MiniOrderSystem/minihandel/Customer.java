@@ -2,6 +2,8 @@ package minihandel;
 
 import java.time.LocalDate;
 import java.util.*;
+
+import MiniOrderSystem.minihandel.Discount;
 import minihandel.Order;
 
 /**
@@ -11,6 +13,7 @@ public class Customer {
 	private String name;
 	private LocalDate birthday;
 	private List<Order> orders = new ArrayList<Order>();
+	private Discount discount;
 
 	/**
 	 * Create a new Customer.
@@ -39,6 +42,8 @@ public class Customer {
 		return new ArrayList<Order>(orders);
 	}
 
+	public void setDiscount(Discount discount){this.discount=discount;}
+
 	public void addOrder(Order order) {
 		if (!orders.contains(order)) {
 			orders.add(order);
@@ -49,6 +54,21 @@ public class Customer {
 		if (orders.contains(order)) {
 			orders.remove(order);
 		}
+	}
+
+	public double totalPrice(){
+		List<Order> list = getOrders();
+		double result = 0;
+
+		for (Order order : list) {
+			result = result+order.getOrderPrice();
+		}
+		return result;
+	}
+
+	public double totalBuyWithDiscount(double price){
+
+		return discount.getDiscount(price);
 	}
 
 }

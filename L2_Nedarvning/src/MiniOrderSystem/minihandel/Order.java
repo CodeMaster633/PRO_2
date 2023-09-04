@@ -38,5 +38,15 @@ public class Order {
     public List<OrderLine> getOrderLines() {
         return new ArrayList<OrderLine>(orderLines);
     }
+
+    public double getOrderPrice(){
+        List<OrderLine> list = getOrderLines();
+        double result = 0;
+
+        for (OrderLine orderLine : list) {
+            result = result+orderLine.getOrderLinePrice();
+        }
+        return result;
+    }
     
 }
