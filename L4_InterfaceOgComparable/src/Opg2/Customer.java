@@ -1,6 +1,6 @@
 package Opg2;
 
-public class Customer {
+public class Customer implements Comparable<Customer>{
     public String fornavn;
     public String efternavn;
     public int alder;
@@ -33,5 +33,27 @@ public class Customer {
 
     public void setAlder(int alder) {
         this.alder = alder;
+    }
+
+
+    @Override
+    public int compareTo(Customer customer) {
+        int comp = this.efternavn.compareTo(customer.getEfternavn());
+
+        if(comp == 0){
+            comp = this.fornavn.compareTo(customer.getFornavn());
+        };
+        if(comp == 0){
+            comp = ((Integer)this.alder).compareTo(customer.getAlder());
+        };
+        
+        return comp;
+    }
+
+    @Override
+    public String toString() {
+        return  fornavn + ' ' +
+                efternavn + ' ' +
+                alder;
     }
 }
