@@ -15,6 +15,19 @@ public class Ex1 {
 		System.out.println(persons);
 		System.out.println();
 
+		System.out.println(findFirst(persons,p -> p.getAge()==44));
+		System.out.println(findFirst(persons,p -> p.getName().startsWith("S")));
+		System.out.println(findFirst(persons,p -> p.getName().split("i").length >= 3));
+		System.out.println(findFirst(persons,p -> p.getAge()==p.getName().length()));
+		System.out.println();
+
+		List<Person> list1 = findAll(persons, p -> p.getAge() < 30);
+
+		System.out.println(list1);
+		System.out.println(findAll(persons, p ->p.getName().split("i").length >= 2));
+		System.out.println(findAll(persons, p ->p.getName().startsWith("S")));
+		System.out.println(findAll(persons, p ->p.getName().length()==5));
+		System.out.println(findAll(persons, p ->p.getName().length()>6&&p.getAge()<40));
 
 
 //		Den første person der hedder Klaus
@@ -37,5 +50,14 @@ public class Ex1 {
 				return p;
 		}
 		return null;
+	}
+
+	public static List<Person> findAll(List<Person> list, Predicate<Person> filter) {
+		List<Person> newList = new ArrayList<>();
+		for (Person p : list) {
+			if (filter.test(p))
+				newList.add(p);
+		}
+		return newList;
 	}
 }

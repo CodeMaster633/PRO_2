@@ -17,5 +17,15 @@ public class Ex2 {
 		System.out.println(runners);
 		System.out.println();
 
+		runners.forEach(runner -> System.out.println(runner));
+		System.out.println();
+		runners.forEach(runner -> {if(runner.getLapTime()<30){
+			System.out.println(runner);
+		}});
+
+		System.out.println();
+		runners.sort((Runner r1,Runner r2) -> r1.getLapTime()- r2.getLapTime());
+		runners.forEach(runner -> System.out.println(runner));
+
 	}
 }
