@@ -36,10 +36,12 @@ public class LinkedListTrain2 extends LinkedListTrain
      * 
      * @param wagon the wagon node to add
      */
-    public void addLast(WagonNode wagon)
-    {
-        // TODO: Assignment 6: Implement this add method...
-
-        throw new UnsupportedOperationException("Not implemented");
+    public void addLast(WagonNode wagon) {
+        if (lastWagon == null) {
+            lastWagon = wagon;
+        } else {
+            wagon.setNextWagon(lastWagon);
+            lastWagon = wagon;
+        }
     }
 }

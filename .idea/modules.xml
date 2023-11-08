@@ -7,11 +7,16 @@
       <module fileurl="file://$PROJECT_DIR$/JavaFXTest/JavaFXTest.iml" filepath="$PROJECT_DIR$/JavaFXTest/JavaFXTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/L10_Collections/L10_Collections.iml" filepath="$PROJECT_DIR$/L10_Collections/L10_Collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/L11_LinkedList/L11_LinkedList.iml" filepath="$PROJECT_DIR$/L11_LinkedList/L11_LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L12_StakBigO/L12_StakBigO.iml" filepath="$PROJECT_DIR$/L12_StakBigO/L12_StakBigO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13_Queue/L13_Queue.iml" filepath="$PROJECT_DIR$/L13_Queue/L13_Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L14_Generisk/L14_Generisk.iml" filepath="$PROJECT_DIR$/L14_Generisk/L14_Generisk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L15_Rekursion/L15_Rekursion.iml" filepath="$PROJECT_DIR$/L15_Rekursion/L15_Rekursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/L2_Nedarvning/L2_Nedarvning.iml" filepath="$PROJECT_DIR$/L2_Nedarvning/L2_Nedarvning.iml" />
       <module fileurl="file://$PROJECT_DIR$/L4_InterfaceOgComparable/L4_InterfaceOgComparable.iml" filepath="$PROJECT_DIR$/L4_InterfaceOgComparable/L4_InterfaceOgComparable.iml" />
       <module fileurl="file://$PROJECT_DIR$/L5_LambdaFunction/L5_LambdaFunction.iml" filepath="$PROJECT_DIR$/L5_LambdaFunction/L5_LambdaFunction.iml" />
       <module fileurl="file://$PROJECT_DIR$/L6_TestJunitMockito/L6_Test/L6_Test.iml" filepath="$PROJECT_DIR$/L6_TestJunitMockito/L6_Test/L6_Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/L7_DobbeltArrays/L7_DobbeltArrays.iml" filepath="$PROJECT_DIR$/L7_DobbeltArrays/L7_DobbeltArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibaryProject/LibaryProject.iml" filepath="$PROJECT_DIR$/LibaryProject/LibaryProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PRO 2.iml" filepath="$PROJECT_DIR$/.idea/PRO 2.iml" />
     </modules>
   </component>
